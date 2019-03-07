@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/alk-rounded-nusx-med.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <title>
+      Chat
+    </title>
+  </head>
+
+  <body onfocus="focc()">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">მთავარი</a></li>
+        <li><a href="#" id="cls">გამორთვა</a></li>
+        <li><a href="#" id="next" onclick="window.location.reload(true);">შემდეგი</a></li>
+        <input type="checkbox" id="switch" name="off" />
+        <label for="switch">Toggle</label>
+      </ul>
+    </nav>
+    <div class="lds-facebook" id="WC" title="უკავშირდებით პარტნიორს...">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="div1">
+      <div class="connected" id="confound" style="opacity: 0;">
+        <img src="tick.png" class="tick_img" />
+      </div>
+      <div id="disconnectDIV" style="opacity: 0">
+        <img src="disconnect.png" class="disc_img" />
+      </div>
+    </div>
+
+    <div class="output" id="output">
+
+      <div class="typing-indicator" id="wae" title="პარტნიორი წერს..." style="display: none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <form class="panel" action="">
+      <input type="text" class="message" id="message" autocomplete="off" spellcheck="false">
+      <img src="upload.svg" class="upload_img">
+      <input type="submit" class="send" id="send" value="გაგზავნა">
+    </form>
+
+    <form class="upload" action="" style="display: none;">
+      <input type="file" id="fileselect" accept="image/*" required>
+    </form>
+    <script src="functi.js"></script>
+  </body>
+
+</html>

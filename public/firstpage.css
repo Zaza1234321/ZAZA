@@ -1,0 +1,203 @@
+html{
+    background-color: #1d9ed6;
+}
+
+@font-face{
+    font-family: geofont;
+    src: url(geofont.ttf);
+}
+
+*{
+    font-family: geofont;
+}
+
+.btn_vid, .btn_chat{
+    background-color: #DDDDDD;
+}
+.header_1{
+    height: 15%;
+    width: 75%;
+    position: absolute;
+    left: 12.5%;
+    background-color: #93e2bb;
+    border-radius: 15px;
+    font-size: 5vw;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 50%;
+    -webkit-box-shadow: 10px 10px 12px #888888;
+            box-shadow: 10px 10px 12px #888888;
+}
+
+.btn_vid{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    height: 10%;
+    width: 25%;
+    font-size: 1.7vw;
+}
+
+.btn_chat{
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    height: 10%;
+    width: 25%;
+    font-size: 2vw;
+}
+
+button{
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+img{
+    position: absolute;
+    cursor: pointer;
+}
+
+.vc_icon{
+    top: 52.5%;
+    left: 22.4%;
+    height: 6%;
+    width: 2.9%; 
+}
+
+.chat_icon{
+    top: 52.5%;
+    right: 23%;
+    height: 6%;
+    width: 2.9%;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+#ad1{
+    position: absolute;
+    width: 11%;
+    height: 97%;
+    right: 0.5%;
+}
+
+#ad2{
+    position: absolute;
+    width: 11%;
+    height: 97%;
+    left: 0.5%;
+}
+
+#phonead{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 415px){
+    .header_1{
+        height: 13%;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .btn_vid{
+        top: 40%;
+        left: 8%;
+        width: 40%;
+        font-size: 4vw;
+        text-align: right;
+    }
+
+    .btn_chat{
+        top: 40%;
+        right: 8%;
+        width: 40%;
+        font-size: 4vw;
+        text-align: left;
+    }
+
+    .vc_icon{
+        top: 42%;
+        left: 11%;
+        width: 9%
+    }
+
+    .chat_icon{
+        top: 42%;
+        right: 10%;
+        width: 9%;
+
+    }
+
+    #ad1{
+        visibility: hidden;
+    }
+
+    #ad2{
+        visibility: hidden;
+    }
+
+    #phonead{
+        position: absolute;
+        visibility: inherit;
+        top: 52%;
+        left: 5%;
+        height: 46%;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 414px){
+    .btn_chat{
+        width: 80%;
+        font-size: 8vw;
+        right: 10%;
+        text-align: left;
+    }
+
+    .btn_vid{
+        position: absolute;
+        top: 37%;
+        width: 80%;
+        font-size: 6.2vw;
+        left: 10%;
+        text-align: right;
+    }
+
+    .vc_icon{
+        top: 39.5%;
+        left: 12%;
+        width: 12%
+    }
+
+    .chat_icon{
+        right: 15%;
+        width: 12%;
+    }
+
+    .header_1{
+        height: 13.5%;
+        font-size: 9vw;
+    }
+
+    #ad1{
+        visibility: hidden;
+    }
+
+    #ad2{
+        visibility: hidden;
+    }
+
+    #phonead{
+        position: absolute;
+        visibility: inherit;
+        top: 62%;
+        left: 10%;
+        height: 36%;
+        width: 80%;
+    }
+}
